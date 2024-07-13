@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <!-- Start of Spinner Overlay -->
+    <div class="loading position-fixed top-0 start-0 bottom-0 end-0">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!-- End of Spinner Overlay -->
+
+    <!-- Start of Side Navbar -->
+    <nav class="side-navbar d-flex position-fixed top-0 vh-100 z-2">
+      <div class="inner d-flex flex-column justify-content-between p-4">
+        <ul class="links ps-0 overflow-hidden z-1">
+          <li class="link pointer position-relative py-2 text-capitalize">
+            <span id="search">search</span>
+          </li>
+
+          <li class="link pointer position-relative py-2 text-capitalize">
+            <span id="categories">categories</span>
+          </li>
+
+          <li class="link pointer position-relative py-2 text-capitalize">
+            <span id="area">area</span>
+          </li>
+
+          <li class="link pointer position-relative py-2 text-capitalize">
+            <span id="ingredients">ingredients</span>
+          </li>
+
+          <li class="link pointer position-relative py-2 text-capitalize">
+            <span id="contact">contact us</span>
+          </li>
+        </ul>
+
+        <footer class="nav-footer">
+          <ul class="social-links d-flex mb-0 ps-0">
+            <li><i class="fa-brands fa-facebook me-1"></i></li>
+            <li><i class="fa-brands fa-twitter me-1"></i></li>
+            <li><i class="fa-solid fa-globe me-1"></i></li>
+          </ul>
+          <p class="copyright">
+            Copyright Â© 2019 All Rights <br />
+            Reserved.
+          </p>
+        </footer>
+      </div>
+
+      <div
+        class="outer d-flex flex-column justify-content-between align-items-center h-100 py-4 px-2 bg-white text-black"
+      >
+        <img src="images/logo.png" alt="yummy logo" class="logo" />
+        <span><i class="toggle-nav fa-solid fa-align-justify"></i></span>
+        <div class="share d-flex flex-column">
+          <i class="fa-solid fa-globe mb-1"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Side Navbar -->
+
+    <main>
+      <div class="position-relative">
+        <div class="searchInputs container w-75"></div>
+
+        <div class="container">
+          <div class="innerLoading position-fixed top-0 start-0 bottom-0 end-0">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+          </div>
+
+          <div class="data row g-4 py-5 ps-5 ps-md-0"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d20a3d392e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <!-- Main JS -->
+    <script src="JS/index.js"></script>
+  </body>
+</html>

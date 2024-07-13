@@ -1,0 +1,78 @@
+:root {
+    /* colors */
+    --black-clr: #0d0d0d;
+    --main-clr: 249, 246, 246;
+}
+
+/* Global */
+body {
+    background-color: var(--black-clr);
+    color: rgb(var(--main-clr));
+    overflow: hidden;
+}
+
+span {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+/* Utilities */
+.pointer {
+    cursor: pointer;
+}
+
+/* Loading */
+.loading,
+.innerLoading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    background-color: black;
+    z-index: 99999;
+}
+
+.innerLoading {
+    background-color: var(--black-clr);
+    z-index: 1;
+}
+
+/* Navbar */
+.logo {
+    width: 50px;
+}
+
+.toggle-nav {
+    font-size: 32px;
+}
+
+.inner {
+    background-color: var(--black-clr);
+}
+
+/* Displayed Meals */
+.card-layer {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: rgb(var(--main-clr), 0.792);
+    transition: 0.5s;
+}
+
+.mealCard:hover .card-layer {
+    top: 0;
+}
