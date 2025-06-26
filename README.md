@@ -51,7 +51,7 @@ yummy/
 
 ## 🔗 Live Demo
 
-[🔗 View Yummy Website](https://nayeragad.github.io/yummy)
+[View Yummy Website](https://nayeragad.github.io/yummy)
 
 ---
 
