@@ -1,6 +1,7 @@
 /* 
         Document Constants
  */
+const homeAnchor = document.getElementById("home");
 const searchAnchor = document.getElementById("search");
 const categoriesAnchor = document.getElementById("categories");
 const areaAnchor = document.getElementById("area");
@@ -21,8 +22,8 @@ let isOpen = false;
  */
 $(function () {
   searchByName("").then(() => {
-    $(".loading").fadeOut(500);
     $("body").css("overflow", "auto");
+    $(".loading").fadeOut(500);
   });
 });
 
@@ -79,6 +80,11 @@ function slideLinksDown() {
 }
 
 closeNavbar();
+
+/* 
+        Home
+ */
+homeAnchor.addEventListener("click", () => searchByName(""));
 
 /* 
         Search 
